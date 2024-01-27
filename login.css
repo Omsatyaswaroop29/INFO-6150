@@ -1,0 +1,39 @@
+body {
+    margin: 30px;
+    background-image: url('GALAXY.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.center-box {
+    background-color: #b3b3c0;
+    padding: 70px;
+    border: 5px solid #392525;
+    height: 20%;
+    width: 20%;
+}
+
+label, input, button, li, img {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+img {
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+
+footer {
+    background-color: #aeb9b1; 
+    color: #bac225;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
