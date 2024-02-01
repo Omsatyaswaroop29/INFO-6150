@@ -3,43 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OM</title>
+    <title>Om Satya Swaroop - Portfolio</title>
+    <link rel="stylesheet" href="final.css">
     <link rel="icon" href="Section 1LOGO1.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="landing.css">
-    <style>
-        /* CSS styles for the upload section */
-        .upload-section {
-            text-align: center;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-    </style>
-</head> 
-<header>
-    <div class="navbar">
-        <li><a href="./landing.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./uploads.html">Uploads</a></li>
-        <div class="right-most">
-            <li><a href="./userdetails.html" > User</a></li>
-            <li><a href="./login.html" > Logout</a></li>
-        </div>
-    </div> 
-</header>
-<body> 
-    <section class="upload-section">
-        <h2>Upload Your File</h2>
-        <form >
-            <label for="file">Select a file:</label>
-            <input type="file" name="file" id="file">
-            <a href="./landing.html"><input type="submit" value="Upload"></a>
-        </form>
-    </section>
-</body>
+</head>
+<body>
+    <header>
+        <h1>Om Satya Swaroop</h1>
+    </header>
 
-<footer>
-    <a href="#home">User Agreement</a>
-    <a href="#home">Privacy Policy</a>
-</footer>
+    <div class="everything-is-here">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+            <img src="Section 1LOGO1.png" alt="Om Satya Swaroop ">
+            <p>I am a highly skilled software developer with over 1 years of experience specializing in DevOps applications. My expertise lies in automating and optimizing infrastructure for development and testing environments. With a strong background in AWS, Java, Terraform, Jenkins, Python, and various other DevOps tools, I am dedicated to streamlining development processes, enhancing efficiency, and ensuring the seamless deployment of software solutions. I have joined Northeastern University's Information Systems course to deepen my knowledge of development, build my programming skills, and stay updated with the latest technology trends to contribute to the future of tech.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Education</h2>
+            <div class="portfolio-columns">
+                <div class="project">
+                    <img src="./download.png" alt="Project 1">
+                    <figcaption>Northeastern University, Boston</figcaption>
+                    <p>Information Systems (2025)</p>
+                </div>
+                <div class="project">
+                    <img src="./NIT_Jalandhar.jpeg" alt="Project 2">
+                    <figcaption>Dr B R Ambedkar National Institute of Technology Jalandhar</figcaption>
+                    <p>Instrumentation and Controll engineering (2022)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <a href="https://www.fourninecloud.com/">
+                    <h3 >Fournine cloud</h3>
+                </a>
+                <p>Senior Software Developer</p>
+                <div class="description">
+                    <div class="responsibility" id="infrastructure">
+                        <h4>Infrastructure Development</h4>
+                        <p>
+                            As a lead, I Designed the deployment life cycle of Bahmni using Helm charts for deployment on Elastic Kubernetes services (EKS). Used GitHub Actions and Terraform scripts for resources on AWS and integrated with monitoring tools like Prometheus and Grafana.
+                            Created a repository that has Terraform code framework for building more than 20 data sources in AWS and Azure on demand through Jenkins.
+                            Solely built Jenkins pipelines, which were used by the development and the QA teams internally and hosted in the ECS of the AWS.
+                            Built Azure build agents for Azure DevOps as self-hosted agents in GCP and Azure using Terraform, which involved working on various Azure services.
+                            Migrated applications hosted on-premises to the ECS and automated the same for on-demand creation using Terraform.
+                        </p>
+                    </div>
+                    <div class="responsibility" id="deployment">
+                        <h4>Cloud Deployment</h4>
+                        <p>
+                            Designed and developed an automation framework for deploying auto-scalable clusters using Amazon services like ECS, cloud watch, VPCs, MQ, auto-scaling groups, etc. 
+                            Containerized and migrated the Bahmni cluster to EKS, a user-friendly open-source Hospital Information System (HIS) and Electronic Medical Record (EMR) application.
+                            Worked on chef cookbooks to build self-configured AMIs in AWS, packaging, and automating network infrastructure deployment.
+                        </p>
+                    </div>
+                    <div class="responsibility" id="automation">
+                        <h4>Test Frameworks and Automation</h4>
+                        <p>
+                            Developed integration tests for Hive data sources using Py-tests. Written automation tests and the unique maven test scripts for various data sources.
+                            Worked on automating the creation of on-demand data sources and infrastructures for testing through Jenkins using Groovy and Terraform scripts in AWS & Azure.
+                            Designed an automation framework for creating infrastructure and running Selenium and integration end-to-end tests as part of release testing using Jenkins pipelines, which replaced the work done by a 10-member team for a sprint of 2 weeks.
+                            Built pipelines on Jenkins for executing selenium tests with gauge framework by integrating browser stack to monitor and check the process visually.
+                        </p>
+                    </div>
+                    <div class="responsibility" id="web">
+                        <h4>Web Development</h4>
+                        <p>
+                            Developed an end-to-end interactive shopping cart application on the spring framework.  
+                            Worked on tasks involving parsing where I had to write a grammar for SQL queries.
+                            Worked in UI development on Angular for the company Chowbotics.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="skills">
+            <h2>Skills and Certifications</h2>
+            <div class="skills-list">
+                <ul class="horizontal-list">
+                    <li class="skill-category highlight">Cloud Technologies</li>
+                    <li>AWS</li>
+                    <li>AZURE</li>
+                    <li>GCP</li>
+                </ul>
+                <ul class="horizontal-list">
+                    <li class="skill-category highlight">Containerization</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                </ul>
+                <ul class="horizontal-list">
+                    <li class="skill-category highlight">Automation</li>
+                    <li>Jenkins</li>
+                    <li>Terraform</li>
+                    <li>Python</li>
+                    <li>Groovy</li>
+                </ul>
+                <ul class="horizontal-list">
+                    <li class="skill-category highlight">Programming</li>
+                    <li>Java</li>
+                    <li>Bash</li>
+                    <li>Ruby</li>
+                </ul>
+                <ul class="horizontal-list">
+                    <li class="skill-category highlight">Front-end Development</li>
+                    <li>Angular</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><a href="tel:888-555-5555">Call 888-555-5555</a></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:abc@gmail.com">Text abc@gmail.com</a></td>
+                </tr>
+            </table>
+                <div class="message-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                
+                        <div class="form-actions">
+                            <button type="submit">Send</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+        </section>
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2023 Om Satya Swaroop</p>
+    </footer>
 </body>
 </html>
