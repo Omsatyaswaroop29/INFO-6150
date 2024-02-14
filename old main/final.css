@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    background-image: url('Galaxy-123.jpg');
+    background-image: url(./beach-1852945_1280.jpg);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to 
+	   bottom, #FFFFFF, #2f2c88);
+       
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-image: linear-gradient(to 
+	   bottom, #c6cdc6, #6259c410);
+    position: fixed;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+/* Section styles */
+.everything-is-here {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to 
+	   bottom, #878b9e, #6654db);
+       
+    
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust the font size for smaller screens */
+    body {
+        font-size: 16px;
+    }
+
+    /* Center-align navigation links for smaller screens */
+    nav {
+        justify-content: center;
+    }
+
+    /* Reduce section padding for smaller screens */
+    section {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    /* Adjust font size for even smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Center-align navigation links for smartphones */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Reduce section padding for smartphones */
+    section {
+        padding: 5px;
+    }
+
+    /* Adjust the tooltip width for smaller screens */
+    .tooltip-container {
+        width: 150px;
+    }
+}
+
+
+
+#about {
+    text-align: center; /* Center-align text */
+    background-image: radial-gradient(circle, #e3a99e, #b57ba5);
+}
+
+#about img {
+    display: block;
+    margin: 0 auto; /* Center-align the image horizontally */
+    max-width: 70%; /* Ensure the image doesn't exceed its container's width */
+    padding: 20px; /* Add spacing around the image */
+}
+
+/* CSS for the "portfolio" section */
+#portfolio {
+    background-image: radial-gradient(circle, #58706e, #d96dc2);
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    text-align: center; /* Center-align text within the section */
+}
+
+.portfolio-columns {
+    display: flex; /* Use flexbox to create a two-column layout */
+    justify-content: space-between; /* Space between the columns */
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+}
+
+.project {
+    flex: 0 0 calc(50% - 10px); /* Two columns, accounting for spacing */
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Left-align content within columns */
+}
+
+.project img {
+    max-width: 100%;
+}
+
+/* Rest of the styles (unchanged) */
+
+
+
+/* CSS for the "experience" section */
+#experience {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center; /* Center-align text within the section */
+}
+
+.experience-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left; /* Left-align content within items */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    position: relative; /* Relative positioning for descriptions */
+}
+
+.experience-item h3{
+    color: #8a2121;
+}
+
+.responsibility {
+    margin-bottom: 10px;
+}
+
+/* Rest of the styles (unchanged) */
+
+
+/* CSS for hover effects and descriptions */
+#infrastructure:hover p {
+    display: block;
+    text-align: center;
+
+}
+
+#deployment:hover p {
+    display: block;
+}
+#automation:hover p {
+    display: block;
+}
+#web:hover p {
+    display: block;
+}
+
+.description{
+    text-align: center;
+    overflow: auto;
+}
+
+/* Hide descriptions by default */
+.description p {
+    display: none;
+    background-color: #ece8d7;
+    overflow:hidden;
+}
+
+/* Style the skills section */
+#skills {
+    text-align: center;
+    background-color: #86236a;
+    padding: 20px;
+    color: white;
+}
+
+/* Style the horizontal list */
+.horizontal-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.horizontal-list li {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #519d8f;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #f0f0f0;
+    color: #86236a;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto; /* Center the table on the page */
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.center-box {
+    background-color: #b3b3c0;
+    padding: 50px;
+    border: 5px solid #392525;
+    height: 20%;
+    width: 20%;
+}
+
+#contact {
+    text-align: left;
+}
+
+.message-form {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    float: none;
+    background-color: #666;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
