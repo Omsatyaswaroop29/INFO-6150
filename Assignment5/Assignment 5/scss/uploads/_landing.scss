@@ -1,0 +1,35 @@
+
+.header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    @include button-styles;
+  }
+  
+  
+  /* SASS Functions */
+@function calculateWidth($width) {
+  @return $width * 2;
+}
+
+body {
+  background-color: $primary-background-color;
+  background-image: linear-gradient(to bottom, #FFFFFF, $primary-background-color);
+  background-repeat: no-repeat;
+}
+
+strong {
+  margin: 3%;
+  color: $strong-color;
+  margin-bottom: 20px;
+}
+
+.strong {
+  margin-top: 3%;
+  // @extend %centered-text;
+}
+
