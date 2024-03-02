@@ -1,0 +1,42 @@
+/* Implement Flexbox layouts for the landing page */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  audio {
+    margin: 2%;
+  }
+  
+  // img {
+  //   margin: 2%;
+  //   height: 300px;
+  //   width: 300px;
+  // }
+  
+  summary {
+    text-align: center;
+    margin: 3%;
+    // margin-bottom: 20px;
+  }
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    // height: 100vh; /* 100% of the viewport height */
+}
+  
+.flex-item {
+  // width: 100px;
+  // height: 100px;
+  // background-color: #3498db;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+}
