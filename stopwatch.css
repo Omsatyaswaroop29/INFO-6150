@@ -1,0 +1,39 @@
+h1 {
+  color: #e90064;
+}
+
+body {
+  background-color: rgb(189, 125, 125);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+#watch {
+  text-align: center;
+}
+
+#watch a {
+  font-size: 2em;
+  margin: 0 50px 0 50px;
+  cursor: pointer;
+}
+
+#span {
+  font-size: 10em;
+}
+
+/* Style for the date picker */
+label {
+  margin-top: 20px;
+}
+
+#datepicker {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #2e8b57;
+  color: white;
+}

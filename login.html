@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginPage.css">
+</head>
+<body>
+  <div id="container">
+    <div id="form-card">
+      <main>
+        <div><h2>LOGIN</h2></div>
+        <div id="form-class">
+          <form id="form" name="formInput" method="post">
+            <div class="inputForm">
+              <label for="username">Username: </label>
+              <input type="text" placeholder="username" name="username" id="username" required />
+              <span id="usernameValidation" class="errMessage"></span>
+              
+              <label for="password">Password: </label>
+              <input type="password" placeholder="password" name="password" id="password" required />
+              <span id="passwordValidation" class="errMessage"></span>
+              
+              <label for="confirmPassword">Confirm Password: </label>
+              <input type="password" placeholder="confirm password" name="confirmPassword" id="confirmPassword" required />
+              <span id="confirmPasswordValidation" class="errMessage"></span>
+              <section>
+              <label for="email">Email: </label>
+              <input type="email" placeholder="username@northeastern.edu" name="email" id="email" required />
+              <span id="emailValidation" class="errMessage"></span>
+            </section>
+              <input type="submit" value="Submit" id="submit" />
+              <input type="reset" value="Reset" id="reset" />
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="loginPage.js"></script>
+</body>
+</html>
